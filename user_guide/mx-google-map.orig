@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>MX Google Map User Guide &mdash; MX Google Map for ExpressionEngine  documentation</title>
+
+    <link rel="stylesheet" href="/assets/css/docs_common.css" type="text/css" />
+    
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+
+    
+
+  </head>
+  <body>
+
+	<div id="brand">
+			<p>MX Google Map  documentation</p>
+	</div>
+
+	<div id="header">
+				<form method="get" action="http://www.google.com/search">
+					<fieldset>
+						<input type="text" name="q" id="q" value="">
+						<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="http://www.eec.ms/user_guide/mx-google-map" />
+						<input class="grades" type="submit" value="search">
+					</fieldset>
+				</form>
+
+		<ul>
+				<li><a href="/user_guide/mx-google-map">Home</a>&nbsp;&nbsp; &raquo;</li>
+
+			<li><strong>MX Google Map User Guide</strong></li>
+		</ul>
+	</div>
+	<div class="section" id="content">
+
+
+	<div class="section" id="mx-google-map-user-guide">
+	<h1>MX Google Map User Guide<a class="headerlink" href="#mx-google-map-user-guide" title="Permalink to this headline">¶</a></h1>
+	<div class="toctree-wrapper compound">
+	</div>
+	<p>
+	MX Google Map fieldtype provides a field for include Google Maps into entries with "store locator" functionality.
+<ul>
+
+<li>MSM compatible</li>
+<li>Based on Google Map API 3</li>
+<li>Support multi geo fields for entry</li>
+<li>Support multi markers per entry</li>
+<li>Drag and drop map marker point for precise control</li>
+<li>“Store locator” functionality</li></ul>
+	</p>
+	<div class="toctree-wrapper compound">
+	<h2>Installing &amp; Updating<a class="headerlink" href="#installing-updating" title="Permalink to this headline">¶</a></h2>
+	<ul>
+	<li><a class="reference internal" href="/user_guide/mx-google-map/license.html">License Agreement</a></li>
+	<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/installation.html">Installation MX Google Map</a></li>
+	
+	
+	<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/changelog.html">Change Log</a></li>
+	</ul>
+	</div>
+
+
+	<div class="toctree-wrapper compound">
+		<h2>Template Tags<a class="headerlink" href="#installing-updating" title="Permalink to this headline">¶</a></h2>
+		<ul>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_1">Primary Tag Pair</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_2">{field_name:map}</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_3">Parameters</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_4"> maptype <small>ROADMAP</small></a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_5">n_control_style <small>ZOOM_PAN</small></a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_6">mt_control_style <small>HORIZONTAL_BAR</small></a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_7">navigationControl <small>true</small></a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_8">scaleControl <small>true</small></a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_9">mapTypeControl <small>true</small></a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_10">scrollwheel <small>true</small></a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_11">doubleclickzoomoff false</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_12">draggable true</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_13">icon</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_14">marker_draggable false</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_15">width="500px"</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_16">height="100%"</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_17">id</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_18">class</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_19">&#123;exp:mx_google_map:form&#125;</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_20">Form Example</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_21">Parameters</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_22">result_page</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_23">long</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_24">lat</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_25">unit</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_26"> backspace</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_27">&#123;exp:mx_google_map:search&#125;</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_28">Parameters</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_29">address</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_30">radius</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_31">prec</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_32">orderby</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_33">sort </a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_34">address_fields</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_35">unit</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_36">Single Variables</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_37">{radius}</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mx-google-map/tags.html#mx-google-map_38">{distance}</a></li>
+		
+		</ul>
+	</div>
+
+
+
+
+	<div class="toctree-wrapper compound">
+	<h2>Getting Help</h2>
+	<ul>
+	<ul>
+	<li class="toctree-l1"><a class="reference internal" href="/forums/">Support</a></li>
+	</ul>
+	</div>
+
+	</div>
+
+
+</div>
+
+	</div>
+	<div id="footer">
+		<p class="top">
+			
+			<a href="#header" title="Return to top">Return to top</a>
+		</p>
+		<p>
+			<a href="#">MX Google Map  documentation</a>
+			 &middot; Copyright &copy; 2012&middot; Last updated May 02, 2018 &middot; Powered by <a href="http://www.expressionengine.com/" title="">ExpressionEngine</a>
+		</p>
+	</div><!-- /#footer -->
+<script type="text/javascript" async="" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script type="text/javascript" async="" src="/javascript/Affiliate"></script>
+
+
+<script>
+//<![CDATA[
+
+
+var s = document.getElementsByTagName('script')[0];
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21863658-1']);
+  _gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.async = true;ga.type = 'application/javascript';
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+//]]>
+</script>
+  </body>
+</html>

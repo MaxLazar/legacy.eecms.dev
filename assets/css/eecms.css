@@ -166,7 +166,7 @@ ul.filter li {
 	float:left;
 	margin-right:0;
 	margin-left:0;
-	background:url(../images/slash.png) left center no-repeat
+	background:url(../images/slash.png.html) left center no-repeat
 }
 
 ul.filter li:first-child {
@@ -491,7 +491,7 @@ h2 {
 
 .classification .cover {
 	position:absolute;
-	background:transparent url(../images/stars.png) top left no-repeat;
+	background:transparent url(../images/stars.png.html) top left no-repeat;
 	top:0;
 	left:0;
 	width:184px;
@@ -501,7 +501,7 @@ h2 {
 
 .classification .cover_result {
 	position:absolute;
-	background:transparent url(../images/stars_full.png) top left no-repeat;
+	background:transparent url(../images/stars_full.png.html) top left no-repeat;
 	top:0;
 	left:0;
 	height:31px;
@@ -572,7 +572,7 @@ ul,ol{list-style:none}
 .jumbotron li img {margin-top:0px;}
 
 .video a{
-   background: url(../../assets_v2/img/videooverlay.png);
+   background: url(../../assets_v2/img/videooverlay.png.html);
 }
 ul.gallery {left:-10px;}
 .gallery li{

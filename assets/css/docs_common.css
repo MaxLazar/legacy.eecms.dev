@@ -190,7 +190,7 @@ fieldset{ border: 0; }
 			#table-contents .toctree-l1{ list-style-type: none; }
 
 			#table-contents .toctree-l1 > a{
-				background: transparent url(../img/paper-ico.gif) no-repeat 0 0;
+				background: transparent url(../img/paper-ico.gif.html) no-repeat 0 0;
 				font-size: 14px;
 				font-weight: bold;
 				padding-left: 20px;
@@ -245,7 +245,7 @@ fieldset{ border: 0; }
 		#header input[type="text"]:focus{ background-color: #FFFDED; outline: 0; }
 
 	#header input[type="submit"]{
-		background: #F0F9FF url(../img/grades.gif) repeat-x 0 -58px;
+		background: #F0F9FF url(../img/grades.gif.html) repeat-x 0 -58px;
 		border: 1px solid #033861;
 		color: #094776;
 		cursor: pointer;

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>MX Mobile Device Detect User Guide &mdash; MX Mobile Device Detect for ExpressionEngine  documentation</title>
+
+    <link rel="stylesheet" href="/assets/css/docs_common.css" type="text/css" />
+    
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+
+    
+
+  </head>
+  <body>
+
+	<div id="brand">
+			<p>MX Mobile Device Detect  documentation</p>
+	</div>
+
+	<div id="header">
+				<form method="get" action="http://www.google.com/search">
+					<fieldset>
+						<input type="text" name="q" id="q" value="">
+						<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="http://www.eec.ms/user_guide/mobile-device-detect" />
+						<input class="grades" type="submit" value="search">
+					</fieldset>
+				</form>
+
+		<ul>
+				<li><a href="/user_guide/mobile-device-detect">Home</a>&nbsp;&nbsp; &raquo;</li>
+
+			<li><strong>MX Mobile Device Detect User Guide</strong></li>
+		</ul>
+	</div>
+	<div class="section" id="content">
+
+
+	<div class="section" id="mobile-device-detect-user-guide">
+	<h1>MX Mobile Device Detect User Guide<a class="headerlink" href="#mobile-device-detect-user-guide" title="Permalink to this headline">¶</a></h1>
+	<div class="toctree-wrapper compound">
+	</div>
+	<p>
+	MX Mobile Detect is a small and simple plugin to detect if the template was requested by Mobile Device or not…
+	</p>
+	<div class="toctree-wrapper compound">
+	<h2>Installing &amp; Updating<a class="headerlink" href="#installing-updating" title="Permalink to this headline">¶</a></h2>
+	<ul>
+	<li><a class="reference internal" href="/user_guide/mobile-device-detect/license.html">License Agreement</a></li>
+	<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/installation.html">Installation MX Mobile Device Detect</a></li>
+	<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/settings.html">Settings</a></li>
+	
+	<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/changelog.html">Change Log</a></li>
+	</ul>
+	</div>
+
+
+	<div class="toctree-wrapper compound">
+		<h2>Template Tags<a class="headerlink" href="#installing-updating" title="Permalink to this headline">¶</a></h2>
+		<ul>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_1">&#123;exp:mobile_detect:device&#125;</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_2">Parameters</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_3">ignore_cookies</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_4">refresh</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_5">&#123;exp:mobile_detect:redirect&#125;</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_6">Parameters</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_7">location</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_8">redirect <small>default mobile</small></a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_9">client <small>optional</small></a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_10">enable <small>on / off</small></a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_11">cookie_name</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_12">cookie_value </a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_13">custom_agents</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_14">ignore_cookies</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_15">refresh</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_16">Redirection/Condition for specific device</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_17">Redirection example</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_18">Disable redirection for specific device</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_19">&#123;exp:mobile_detect:pair&#125;</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_20">Parameters</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_21">ignore_cookies = "yes"</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_22">refresh</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_23">Conditional variables</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_24">if mobile</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_25">if not_mobile</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_26">&#123;exp:mobile_detect:screen_detect &#125;</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_27">Settings</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_28">Global Variables</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_29">{screen_width}</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_30">{screen_height}</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_31">{screen_pixel_ratio}</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_32">{screen_size}</a></li>
+		
+		<li class="toctree-l1"><a class="reference internal" href="/user_guide/mobile-device-detect/tags.html#mobile-device-detect_33">List of devices</a></li>
+		
+		</ul>
+	</div>
+
+
+
+
+	<div class="toctree-wrapper compound">
+	<h2>Getting Help</h2>
+	<ul>
+	<ul>
+	<li class="toctree-l1"><a class="reference internal" href="/forums/">Support</a></li>
+	</ul>
+	</div>
+
+	</div>
+
+
+</div>
+
+	</div>
+	<div id="footer">
+		<p class="top">
+			
+			<a href="#header" title="Return to top">Return to top</a>
+		</p>
+		<p>
+			<a href="#">MX Mobile Device Detect  documentation</a>
+			 &middot; Copyright &copy; 2012&middot; Last updated May 02, 2018 &middot; Powered by <a href="http://www.expressionengine.com/" title="">ExpressionEngine</a>
+		</p>
+	</div><!-- /#footer -->
+<script type="text/javascript" async="" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script type="text/javascript" async="" src="/javascript/Affiliate"></script>
+
+
+<script>
+//<![CDATA[
+
+
+var s = document.getElementsByTagName('script')[0];
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21863658-1']);
+  _gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.async = true;ga.type = 'application/javascript';
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+//]]>
+</script>
+  </body>
+</html>
