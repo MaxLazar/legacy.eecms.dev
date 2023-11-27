@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Grid Lite User Guide &mdash; Grid Lite for ExpressionEngine  documentation</title>
+
+    <link rel="stylesheet" href="/assets/css/docs_common.css" type="text/css" />
+    
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+
+    
+
+  </head>
+  <body>
+
+	<div id="brand">
+			<p>Grid Lite  documentation</p>
+	</div>
+
+	<div id="header">
+				<form method="get" action="http://www.google.com/search">
+					<fieldset>
+						<input type="text" name="q" id="q" value="">
+						<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="http://www.eec.ms/user_guide/grid-lite" />
+						<input class="grades" type="submit" value="search">
+					</fieldset>
+				</form>
+
+		<ul>
+				<li><a href="/user_guide/grid-lite">Home</a>&nbsp;&nbsp; &raquo;</li>
+
+			<li><strong>Grid Lite User Guide</strong></li>
+		</ul>
+	</div>
+	<div class="section" id="content">
+
+
+	
+	<div class="section" id="grid-lite-user-guide">
+		<h1>Tags<a class="headerlink" href="#grid-lite-tags" title="Permalink to this headline">¶</a></h1>
+		<div class="contents local topic" id="contents">
+			<ul class="simple">
+				<li><a class="reference internal" href="#lv1" id="id1">Primary Tag Pair</a></li><li><a class="reference internal" href="#lv12" id="id12">:total_rows</a></li>
+			</ul>
+		</div>
+		
+			
+			<h2 id="lv1">Primary Tag Pair</h2>
+			<div class="highlight-ci"><pre><code>&lt;ul&gt;
+&#123;release&#125;
+  &lt;h2&gt;Version &#123;version&#125;&lt;/h2&gt;
+&lt;p&gt;	Release Date: &#123;date&#125;&lt;br /&gt;
+	&#123;notes&#125;&lt;br /&gt;
+&#123;/release&#125;&lt;/p&gt;
+&lt;/ul&gt;</code></pre></div>
+		
+			
+			<h3 id="lv2">Tag Parameters</h3>
+			<div class="highlight-ci"><pre><code>&#123;release limit="" offset="" sort ="" backspace="" row_id=""&#125;
+...
+&#123;/release&#125;</code></pre></div>
+		
+			
+			<h4 id="lv3">limit</h4>
+			<p>This parameter limits the number of rows on any given page.</p>
+		
+			
+			<h4 id="lv4">offset</h4>
+			<p>This parameter offsets the display by X number of rows. For example, if you want to show all rows except the three latest ones, you would do this </p><pre><code>offset="3"</code></pre>
+		
+			
+			<h4 id="lv5">sort</h4>
+			<div class="highlight-ci"><pre><code>sort="asc"</code></pre></div>
+<div class="highlight-ci">code]sort=&#8220;desc&#8221;</code></pre></div>
+<p>The sort order can be ascending or descending. The order will default to &#8220;descending&#8221; if nothing is specified.</p><div class="highlight-ci"><pre><code>sort="random"</code></pre></div>
+		
+			
+			<h4 id="lv6">backspace</h4>
+			<p>Backspacing removes characters (including spaces and line breaks) from the last iteration of the loop.</p>
+		
+			
+			<h4 id="lv7">row_id</h4>
+			<div class="highlight-ci"><pre><code>row_id="3"</code></pre></div>
+<p>You can hard code the grid field to show a specific rows.<br />
+You may also specify multiple rows by separating them with the pipe character:</p><div class="highlight-ci"><pre><code>row_id="3|4"</code></pre></div>
+<p>Or use &#8220;not&#8221; to exclude rows:</p><div class="highlight-ci"><pre><code>row_id="not 3|5"</code></pre></div>
+		
+			
+			<h3 id="lv8">Single Variables</h3>
+			
+		
+			
+			<h4 id="lv9">absolute_count</h4>
+			<p>The absolute &#8220;count&#8221; out of the current rows being displayed by the tag, including offset rows.</p>
+		
+			
+			<h4 id="lv10">row_id</h4>
+			<p>The &#8220;count&#8221; out of the current rows being displayed. If five rows are being displayed, then for the fourth row the {row_id} variable would have a value of &#8220;4&#8221;.</p>
+		
+			
+			<h4 id="lv11">total_rows</h4>
+			<p>Total rows</p>
+		
+			
+			<h2 id="lv12">:total_rows</h2>
+			<p>The total number of rows for a particular field</p><div class="highlight-ci">
+<pre><code>&#123;if '&#123;images:total_rows&#125;' &gt; 0&#125; 
+...
+&#123;/if&#125;</code></pre></div>
+		
+	</div>
+	
+
+
+</div>
+
+	</div>
+	<div id="footer">
+		<p class="top">
+			
+			<a href="#header" title="Return to top">Return to top</a>
+		</p>
+		<p>
+			<a href="#">Grid Lite  documentation</a>
+			 &middot; Copyright &copy; 2012&middot; Last updated May 01, 2018 &middot; Powered by <a href="http://www.expressionengine.com/" title="">ExpressionEngine</a>
+		</p>
+	</div><!-- /#footer -->
+<script type="text/javascript" async="" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script type="text/javascript" async="" src="/javascript/Affiliate"></script>
+
+
+<script>
+//<![CDATA[
+
+
+var s = document.getElementsByTagName('script')[0];
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21863658-1']);
+  _gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.async = true;ga.type = 'application/javascript';
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+//]]>
+</script>
+  </body>
+</html>

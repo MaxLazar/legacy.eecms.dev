@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>MX Google Map User Guide &mdash; MX Google Map for ExpressionEngine  documentation</title>
+
+    <link rel="stylesheet" href="/assets/css/docs_common.css" type="text/css" />
+    
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+
+    
+
+  </head>
+  <body>
+
+	<div id="brand">
+			<p>MX Google Map  documentation</p>
+	</div>
+
+	<div id="header">
+				<form method="get" action="http://www.google.com/search">
+					<fieldset>
+						<input type="text" name="q" id="q" value="">
+						<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="http://www.eec.ms/user_guide/mx-google-map" />
+						<input class="grades" type="submit" value="search">
+					</fieldset>
+				</form>
+
+		<ul>
+				<li><a href="/user_guide/mx-google-map">Home</a>&nbsp;&nbsp; &raquo;</li>
+
+			<li><strong>MX Google Map User Guide</strong></li>
+		</ul>
+	</div>
+	<div class="section" id="content">
+
+
+	<div class="section" id="mx-google-map-user-guide">
+
+		<h1>MX Google Map Tags<a class="headerlink" href="#mx-google-map-tags" title="Permalink to this headline">¶</a></h1>
+		
+		<div class="section">
+			<h2>Installation</h2>
+<ol>
+	<li> Download the latest version of <a href="#download">MX Google Map</a> and extract the .zip to your desktop.</li>
+	<li>Copy <i>system/expressionengine/third_party/mx_google_map</i> to <i>system/expressionengine/third_party/</i></li>
+</ol>
+
+<h2>Activation</h2>
+
+<ol>
+<li>Log into your control panel</li>
+<li>Browse to <a href="http://expressionengine.com/user_guide/cp/add-ons/module_manager.html">Addons > Modules</a></li>
+<li>Enable all the <b>MX Google Map</b> components</li>
+</ol>
+
+<h2>Config.php overrides</h2>
+<pre><code>$config&#91;&#39;mx_markers_url&#39;&#93; = &#39;&#39;; // url to markers folder
+$config&#91;&#39;mx_markers_path&#39;&#93; = &#39;&#39;; // path to markers folder
+$config&#91;&#39;geo_cache_dir&#39;&#93; = &#39;&#39;; // geo cache folder
+$config&#91;&#39;geo_cache_lifetime&#39;&#93; = &#39;&#39;; // geo cache lifetime</code></pre>
+		</div>
+	</div>
+
+
+</div>
+
+	</div>
+	<div id="footer">
+		<p class="top">
+			
+			<a href="#header" title="Return to top">Return to top</a>
+		</p>
+		<p>
+			<a href="#">MX Google Map  documentation</a>
+			 &middot; Copyright &copy; 2012&middot; Last updated May 02, 2018 &middot; Powered by <a href="http://www.expressionengine.com/" title="">ExpressionEngine</a>
+		</p>
+	</div><!-- /#footer -->
+<script type="text/javascript" async="" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script type="text/javascript" async="" src="/javascript/Affiliate"></script>
+
+
+<script>
+//<![CDATA[
+
+
+var s = document.getElementsByTagName('script')[0];
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21863658-1']);
+  _gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.async = true;ga.type = 'application/javascript';
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+//]]>
+</script>
+  </body>
+</html>

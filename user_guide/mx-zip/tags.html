@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>MX Zip User Guide &mdash; MX Zip for ExpressionEngine  documentation</title>
+
+    <link rel="stylesheet" href="../../assets/css/docs_common.css" type="text/css" />
+    
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+
+    
+
+  </head>
+  <body>
+
+	<div id="brand">
+			<p>MX Zip  documentation</p>
+	</div>
+
+	<div id="header">
+				<form method="get" action="http://www.google.com/search">
+					<fieldset>
+						<input type="text" name="q" id="q" value="">
+						<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="http://www.eec.ms/user_guide/mx-zip" />
+						<input class="grades" type="submit" value="search">
+					</fieldset>
+				</form>
+
+		<ul>
+				<li><a href="../mx-zip">Home</a>&nbsp;&nbsp; &raquo;</li>
+
+			<li><strong>MX Zip User Guide</strong></li>
+		</ul>
+	</div>
+	<div class="section" id="content">
+
+
+	
+	<div class="section" id="mx-zip-user-guide">
+		<h1>Tags<a class="headerlink" href="tags.html#mx-zip-tags" title="Permalink to this headline">¶</a></h1>
+		<div class="contents local topic" id="contents">
+			<ul class="simple">
+				<li><a class="reference internal" href="tags.html#lv1" id="id1">&#123;exp:zip&#125;</a></li>
+			</ul>
+		</div>
+		
+			
+			<h2 id="lv1">&#123;exp:zip&#125;</h2>
+			<pre><code>&#123;exp:zip direct_output="no" folder="images" filename="min.zip" max_size="1024" comment="Made in ExpressionEngine" remove_path="" add_path=""&#125;
+	&#123;zip:files&#125;
+		&#91;themes/cp_global_images/watermark_test.jpg&#93;
+		&#91;themes/cp_global_images/ee_logo.jpg&#93;
+		&#91;themes/profile_themes/&#93;
+		&#91;themes/cp_themes/classic/classic.css&#93;
+	&#123;/zip:files&#125;
+
+&#123;/exp:zip&#125;</code></pre>
+		
+			
+			<h3 id="lv2">Parameters</h3>
+			
+		
+			
+			<h4 id="lv3">folder</h4>
+			<p>folder whare you want to save your zip files in <i>direct_output = false mode</i></p>
+		
+			
+			<h4 id="lv4">filename</h4>
+			<p>zip fillename. By default the filename is <i>unix_timestamp.zip</i></p>
+		
+			
+			<h4 id="lv5">remove_path <small>optional</small></h4>
+			<p>This parameter gives the ability to suppress a part or all the path of the files (or directories) when they are extracted or archived.</p>
+		
+			
+			<h4 id="lv6">add_path <small>optional</small></h4>
+			<p>This parameter gives the ability to insert a path while files are extracted or archived.</p>
+
+
+		
+			
+			<h4 id="lv7">comment <small>optional</small></h4>
+			<p>This parameter gives the ability to set a comment in the ZIP archive.</p>
+		
+			
+			<h4 id="lv8">remove_all_path <small>optional</small></h4>
+			<p>This parameter gives the ability to suppress all the path of the file when extracting it or adding it in the archive.</p>
+		
+			
+			<h4 id="lv9">return_name_only <small>optional</small></h4>
+			<p>This parameter gives ability to return archive name only</p>
+		
+			
+			<h4 id="lv10">max_size <small>optional</small></h4>
+			
+		
+			
+			<h4 id="lv11">overwrite <small>optional</small></h4>
+			<p>overwrite file or not</p>
+		
+			
+			<h4 id="lv12">direct_output <small>optional</small></h4>
+			<div class="highlight-ci">
+<pre><code>direct_output="no"</code></pre></div>
+<p>the plugin can sent direct to user or can save package file on the web server</p>
+		
+			
+			<h4 id="lv13">speed <small>optional</small></h4>
+			<div class="highlight-ci">
+<pre><code>speed="500"</code></pre></div><p> Download speed in kb</p>
+		
+			
+			<h3 id="lv14">Conditional variables</h3>
+			
+		
+			
+			<h4 id="lv15">if file_limit</h4>
+			<p>You may use this conditional for displaying a message in the case when size of your files preparing for package more then max_size</p>
+		
+			
+			<h3 id="lv16">Variable pairs</h3>
+			
+		
+			
+			<h4 id="lv17">{zip:files}[file_or_folder_path,folder_structure4zip]{/zip:files}</h4>
+			<p>A comma separated list of files/folders for packing<br><br />
+&nbsp;  &nbsp;  &nbsp; <i>file_or_folder_path</i> - file or folder which you want to zip with full or relative server path.<br><br />
+&nbsp;  &nbsp;  &nbsp; <i>folder_structure4zip <small style="color: rgb(75, 144, 185);">(optional)</small> </i>- individual folder path for file in the zip archive.</p>
+		
+	</div>
+	
+
+
+</div>
+
+	</div>
+	<div id="footer">
+		<p class="top">
+			
+			<a href="tags.html#header" title="Return to top">Return to top</a>
+		</p>
+		<p>
+			<a href="tags.html#">MX Zip  documentation</a>
+			 &middot; Copyright &copy; 2012&middot; Last updated May 02, 2018 &middot; Powered by <a href="http://www.expressionengine.com/" title="">ExpressionEngine</a>
+		</p>
+	</div><!-- /#footer -->
+<script type="text/javascript" async="" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script type="text/javascript" async="" src="../../javascript/Affiliate"></script>
+
+
+<script>
+//<![CDATA[
+
+
+var s = document.getElementsByTagName('script')[0];
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21863658-1']);
+  _gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.async = true;ga.type = 'application/javascript';
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+//]]>
+</script>
+  </body>
+</html>

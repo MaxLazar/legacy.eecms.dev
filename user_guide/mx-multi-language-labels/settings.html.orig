@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>MX Multi Language Labels User Guide &mdash; MX Multi Language Labels for ExpressionEngine  documentation</title>
+
+    <link rel="stylesheet" href="/assets/css/docs_common.css" type="text/css" />
+    
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+
+    
+
+  </head>
+  <body>
+
+	<div id="brand">
+			<p>MX Multi Language Labels  documentation</p>
+	</div>
+
+	<div id="header">
+				<form method="get" action="http://www.google.com/search">
+					<fieldset>
+						<input type="text" name="q" id="q" value="">
+						<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="http://www.eec.ms/user_guide/mx-multi-language-labels" />
+						<input class="grades" type="submit" value="search">
+					</fieldset>
+				</form>
+
+		<ul>
+				<li><a href="/user_guide/mx-multi-language-labels">Home</a>&nbsp;&nbsp; &raquo;</li>
+
+			<li><strong>MX Multi Language Labels User Guide</strong></li>
+		</ul>
+	</div>
+	<div class="section" id="content">
+
+
+	
+	<div class="section" id="mx-multi-language-labels-user-guide-settings">
+		<h1>Settings<a class="headerlink" href="#mx-multi-language-labels-settings" title="Permalink to this headline">¶</a></h1>
+		<div class="contents local topic" id="contents">
+			<ul class="simple">
+				<li><a class="reference internal" href="#lv1" id="id1"></a></li>
+			</ul>
+		</div>
+		
+		
+		<div class="section" id="mx-multi-language-labelssettings1">
+		<h2 id="lv1"></h2>
+			
+		</div>
+		
+	</div>
+	
+
+
+</div>
+
+	</div>
+	<div id="footer">
+		<p class="top">
+			
+			<a href="#header" title="Return to top">Return to top</a>
+		</p>
+		<p>
+			<a href="#">MX Multi Language Labels  documentation</a>
+			 &middot; Copyright &copy; 2012&middot; Last updated May 02, 2018 &middot; Powered by <a href="http://www.expressionengine.com/" title="">ExpressionEngine</a>
+		</p>
+	</div><!-- /#footer -->
+<script type="text/javascript" async="" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script type="text/javascript" async="" src="/javascript/Affiliate"></script>
+
+
+<script>
+//<![CDATA[
+
+
+var s = document.getElementsByTagName('script')[0];
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21863658-1']);
+  _gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.async = true;ga.type = 'application/javascript';
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+//]]>
+</script>
+  </body>
+</html>

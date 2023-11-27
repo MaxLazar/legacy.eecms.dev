@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>MX Mobile Device Detect User Guide &mdash; MX Mobile Device Detect for ExpressionEngine  documentation</title>
+
+    <link rel="stylesheet" href="../../assets/css/docs_common.css" type="text/css" />
+    
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+
+    
+
+  </head>
+  <body>
+
+	<div id="brand">
+			<p>MX Mobile Device Detect  documentation</p>
+	</div>
+
+	<div id="header">
+				<form method="get" action="http://www.google.com/search">
+					<fieldset>
+						<input type="text" name="q" id="q" value="">
+						<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="http://www.eec.ms/user_guide/mobile-device-detect" />
+						<input class="grades" type="submit" value="search">
+					</fieldset>
+				</form>
+
+		<ul>
+				<li><a href="../mobile-device-detect">Home</a>&nbsp;&nbsp; &raquo;</li>
+
+			<li><strong>MX Mobile Device Detect User Guide</strong></li>
+		</ul>
+	</div>
+	<div class="section" id="content">
+
+
+	
+	<div class="section" id="mobile-device-detect-user-guide">
+		<h1>Tags<a class="headerlink" href="tags.html#mobile-device-detect-tags" title="Permalink to this headline">¶</a></h1>
+		<div class="contents local topic" id="contents">
+			<ul class="simple">
+				<li><a class="reference internal" href="tags.html#lv1" id="id1">&#123;exp:mobile_detect:device&#125;</a></li><li><a class="reference internal" href="tags.html#lv5" id="id5">&#123;exp:mobile_detect:redirect&#125;</a></li><li><a class="reference internal" href="tags.html#lv19" id="id19">&#123;exp:mobile_detect:pair&#125;</a></li><li><a class="reference internal" href="tags.html#lv26" id="id26">&#123;exp:mobile_detect:screen_detect &#125;</a></li><li><a class="reference internal" href="tags.html#lv33" id="id33">List of devices</a></li>
+			</ul>
+		</div>
+		
+			
+			<h2 id="lv1">&#123;exp:mobile_detect:device&#125;</h2>
+			<div class="highlight-ci">
+<pre><code>You have &#123;exp:mobile_detect:device&#125; !</code></pre> </div>
+<div class="highlight-ci">
+<pre><code>&#123;if "&#123;exp:mobile_detect:device&#125;" == "ipad"}
+
+&#123;/if}</code></pre> </div>
+
+<div class="highlight-ci">
+<pre><code>&#123;if "&#123;exp:mobile_detect:device&#125;" != "not_mobile"}
+Greetings mobile visitor!
+&#123;/if}
+&#123;if "&#123;exp:mobile_detect:device&#125;" == "not_mobile"}
+
+&#123;/if}</code></pre> </div>
+		
+			
+			<h3 id="lv2">Parameters</h3>
+			
+		
+			
+			<h4 id="lv3">ignore_cookies</h4>
+			<div class="highlight-ci"><pre><code>ignore_cookies = "yes"</code></pre></div>
+		
+			
+			<h4 id="lv4">refresh</h4>
+			<div class="highlight-ci"><pre><code>refresh = "yes"</code></pre></div>
+<p>Refresh previous mobile detect result</p>
+		
+			
+			<h2 id="lv5">&#123;exp:mobile_detect:redirect&#125;</h2>
+			<div class="highlight-ci">
+<pre><code>&#123;exp:mobile_detect:redirect location="http://m.site.com/"&#125;</code></pre> </div>
+<div class="highlight-ci">
+<pre><code>&#123;exp:mobile_detect:redirect location="http://site.com/" redirect="not_mobile"&#125;</code></pre></div>
+<div class="highlight-ci">
+<pre><code>&#123;exp:mobile_detect:redirect ipad="http://ipad.site.com/" kindlefire="amazon.com"&#125;</code></pre> </div>
+		
+			
+			<h3 id="lv6">Parameters</h3>
+			
+		
+			
+			<h4 id="lv7">location</h4>
+			<p>URL for redirect</p>
+		
+			
+			<h4 id="lv8">redirect <small>default mobile</small></h4>
+			<p>Two options:</p><div class="highlight-ci">
+<pre><code>redirect="mobile"</code></pre> </div>
+<div class="highlight-ci">
+<pre><code>redirect="not_mobile"</code></pre> </div>
+		
+			
+			<h4 id="lv9">client <small>optional</small></h4>
+			<p>the string which you want to find in HTTP_USER_AGENT. It could be the OS name/version, Browser name etc.. For example you can redirect all users with Internet Explorer 6.0 to specific page.</p><div class="highlight-ci"><pre><code>&#123;exp:mobile_detect:redirect location="http://site.com/please-update-your-ie.html" client="MSIE 6."&#125;</code></pre></div>
+		
+			
+			<h4 id="lv10">enable <small>on / off</small></h4>
+			<p>Turned off mobile redirection.</p><div class="highlight-ci"><pre><code>&#123;exp:mobile_detect:redirect enable="off"  location="http://site.com/"&#125;</code></pre> </div>
+		
+			
+			<h4 id="lv11">cookie_name</h4>
+			
+		
+			
+			<h4 id="lv12">cookie_value </h4>
+			<div class="highlight-ci"><pre><code>cookie_name = "mobile_redirect"</code></pre> </div>
+<div class="highlight-ci"><pre><code>cookie_value = "on"</code></pre> </div>
+
+<p>This allows you to set a cookie on the mobile site to notify plugin that the mobile visitor should be allowed to view the full site.</p>
+		
+			
+			<h4 id="lv13">custom_agents</h4>
+			<p><b>*NOTE: Custom agents must be in low case. Replace spaces in name is replaced with underscores.</b></p><div class="highlight-ci"><pre><code>&#123;exp:mobile_detect custom_agents="mobile/8a293"&#125;
+    &#123;if device == "ipad"}
+        Hello Steve
+    &#123;/if}
+    &#123;if device == "android" }
+        Hello Bender
+    &#123;/if}
+    &#123;if device == "mobile/8a293" }
+        Hello iPhone4
+    &#123;/if}
+    &#123;if not_mobile}
+        Hello ...
+    &#123;/if}
+&#123;/exp:mobile_detect&#125;</code></pre></div>
+		
+			
+			<h4 id="lv14">ignore_cookies</h4>
+			<div class="highlight-ci"><pre><code>ignore_cookies = "yes"</code></pre></div>
+		
+			
+			<h4 id="lv15">refresh</h4>
+			<div class="highlight-ci"><pre><code>refresh = "yes"</code></pre></div>
+<p>Refresh previous mobile detect result</p>
+		
+			
+			<h3 id="lv16">Redirection/Condition for specific device</h3>
+			
+		
+			
+			<h4 id="lv17">Redirection example</h4>
+			<p><b>*NOTE: Device names must be in low case. Replace spaces in name is replaced with underscores.</b></p><div class="highlight-ci"><pre><code>&#123;exp:mobile_detect:redirect location="http://site.com/" 
+ipad="http://site.com/ipad/" android="http://site.com/android/"}</code></pre></div>
+		
+			
+			<h4 id="lv18">Disable redirection for specific device</h4>
+			<div class="highlight-ci"><pre><code>&#123;exp:mobile_detect location="http://site.com/" ipad="no"&#125;</code></pre></div>
+		
+			
+			<h2 id="lv19">&#123;exp:mobile_detect:pair&#125;</h2>
+			<p><b>*NOTE: Device names must be in low case. Replace spaces in name is replaced with underscores.</b></p><div class="highlight-ci">
+<pre><code>&#123;exp:mobile_detect&#125;
+	&#123;if device == "ipad"}
+		Hello Steve
+	&#123;/if}
+	&#123;if device == "android" }
+		Hello Bender
+	&#123;/if}
+	&#123;if not_mobile}
+		Hello ...
+	&#123;/if}
+&#123;/exp:mobile_detect&#125;</code></pre></div>
+		
+			
+			<h3 id="lv20">Parameters</h3>
+			
+		
+			
+			<h4 id="lv21">ignore_cookies = "yes"</h4>
+			<div class="highlight-ci"><pre><code>ignore_cookies = "yes"</code></pre></div>
+
+<p>Can be useful for menu</p>
+
+<div class="highlight-ci"><pre><code>&#123;exp:mobile_detect:pair ignore_cookies="yes"&#125;
+   &#123;if mobile}      
+      &lt;a href="#" onClick="Set_Cookie( 'exp'+'_'+'mobile_redirect', 'off', '', '/', '', '','' );"&gt;Show desktop version&lt;/a&gt;
+   &#123;/if}
+   &#123;if not_mobile}
+      &lt;a href="#" onClick="Set_Cookie( 'exp'+'_'+'mobile_redirect', 'on', '', '/', '', '','' );"&gt;Show mobile version&lt;/a&gt;
+   &#123;/if}
+&#123;/exp:mobile_detect:pair&#125;</code></pre></div>
+		
+			
+			<h4 id="lv22">refresh</h4>
+			<div class="highlight-ci"><pre><code>refresh = "yes"</code></pre></div>
+<p>Refresh previous mobile detect result</p>
+		
+			
+			<h3 id="lv23">Conditional variables</h3>
+			
+		
+			
+			<h4 id="lv24">if mobile</h4>
+			<div class="highlight-ci"><pre><code>&#123;exp:mobile_detect&#125;
+ &#123;if mobile}
+ Is mobile device
+ &#123;/if}
+&#123;/exp:mobile_detect&#125;</code></pre></div>
+		
+			
+			<h4 id="lv25">if not_mobile</h4>
+			<div class="highlight-ci"><pre><code>&#123;exp:mobile_detect:pair&#125;
+ &#123;if not_mobile}
+ Is not mobile device
+ &#123;/if}
+&#123;/exp:mobile_detect:pair&#125;</code></pre></div>
+		
+			
+			<h2 id="lv26">&#123;exp:mobile_detect:screen_detect &#125;</h2>
+			<div class="highlight-ci"><pre><code>&#123;exp:mobile_detect:screen_detect &#125;</code></pre></div>
+<p>this tag is put JS on the page to detect screen resolution at the first time when user visit you site. After that information will be available in global variables.</p><div class="highlight-ci"><pre><code>&#123;if &#123;screen_width&#125; &gt; 1024&#125;You have desktop&#123;/if&#125;</code></pre></div>
+
+<div class="highlight-ci"><pre><code>&#123;news_image&#125;&lt;img scr="/image/&#123;screen_size&#125;/&#123;file_name&#125;"&gt;&#123;/news_image&#125;</code></pre></div>
+		
+			
+			<h3 id="lv27">Settings</h3>
+			<p><img src="http://images.eec.ms/images/addons/22/mx-mobile-detect-ext__large.png" alt="Mobile Detect Settings"></p>
+
+
+		
+			
+			<h3 id="lv28">Global Variables</h3>
+			
+		
+			
+			<h4 id="lv29">{screen_width}</h4>
+			<p>Screen Width</p>
+		
+			
+			<h4 id="lv30">{screen_height}</h4>
+			<p>Screen Height</p>
+		
+			
+			<h4 id="lv31">{screen_pixel_ratio}</h4>
+			<p>Pixel Ratio</p>
+		
+			
+			<h4 id="lv32">{screen_size}</h4>
+			<p>This Global Varible will consist</p>
+		
+			
+			<h2 id="lv33">List of devices</h2>
+			<div class="highlight-ci"><pre><code>android
+blackberry
+iphone4
+iphone
+ipad
+kindlefire
+opera
+windows
+palm
+mobile</code></pre></div>
+<p><i>note: <b>mobile</b> condition is many mobile devices  which ever existed </i></p>
+		
+	</div>
+	
+
+
+</div>
+
+	</div>
+	<div id="footer">
+		<p class="top">
+			
+			<a href="tags.html#header" title="Return to top">Return to top</a>
+		</p>
+		<p>
+			<a href="tags.html#">MX Mobile Device Detect  documentation</a>
+			 &middot; Copyright &copy; 2012&middot; Last updated May 02, 2018 &middot; Powered by <a href="http://www.expressionengine.com/" title="">ExpressionEngine</a>
+		</p>
+	</div><!-- /#footer -->
+<script type="text/javascript" async="" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script type="text/javascript" async="" src="../../javascript/Affiliate"></script>
+
+
+<script>
+//<![CDATA[
+
+
+var s = document.getElementsByTagName('script')[0];
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21863658-1']);
+  _gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.async = true;ga.type = 'application/javascript';
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+//]]>
+</script>
+  </body>
+</html>
